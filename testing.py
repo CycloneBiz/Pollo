@@ -14,6 +14,5 @@ class MyTrigger(Trigger):
 
 trigger = MyTrigger()
 my_loop = Loop(1, trigger, print)
-my_loop = Loop(1, trigger, print)
 sleep(10)
 trigger.set()
