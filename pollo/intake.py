@@ -8,5 +8,5 @@ if __name__ == "__main__":
     def my_annoying_func(message):
         print(message)
 
-    x = intake(my_annoying_func, "hello world")
+    x = intake(my_annoying_func, message="hello world")
     print(x())
