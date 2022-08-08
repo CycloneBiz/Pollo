@@ -13,6 +13,6 @@ class MyTrigger(Trigger):
         self.my_val = 1
 
 trigger = MyTrigger()
-my_loop = Loop(1, trigger, print, "x == 0")
+my_loop = Loop(1, trigger, print, "temp == 0")
 sleep(2)
 trigger.set()
