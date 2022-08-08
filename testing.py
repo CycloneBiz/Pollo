@@ -4,15 +4,15 @@ from time import sleep
 class MyTrigger(Trigger):
     def __init__(self) -> None:
         super().__init__()
-        self.my_val = False
+        self.my_val = 0
 
     def get(self):
-        return self.my_val
+        return {"temp": self.my_val}
 
     def set(self):
-        self.my_val = True
+        self.my_val = 1
 
 trigger = MyTrigger()
-my_loop = Loop(1, trigger, print)
-sleep(10)
+my_loop = Loop(1, trigger, print, "x == 0")
+sleep(2)
 trigger.set()
